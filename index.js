@@ -35,7 +35,6 @@ io.on('connection',(socket)=>{
 
     //Disconnect users
     socket.on('disconnect',async()=>{
-        console.log(activeUsers)
         activeUsers.map((user)=>{
             let requestBody = {
                 id: user?.userId,
