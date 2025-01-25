@@ -44,7 +44,7 @@ io.on('connection',(socket)=>{
                     time: new Date().toLocaleTimeString('en-US',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',hour12:true})
                 }
             }
-            const result = axios.post('https://chatapp-6l69.onrender.com/api/lastseen',requestBody)
+            const result = axios.post('https://chatapplication-htk5.onrender.com/api/lastseen',requestBody)
         })
         activeUsers = activeUsers.filter((user)=> user.socketId !== socket.id)
         console.log('user Disconnected',activeUsers);
